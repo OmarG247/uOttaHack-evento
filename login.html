@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/icon-dark.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/icon-light.png">
 
     <title>Evento</title>
 
@@ -17,54 +17,31 @@
 
 <body>
 
-    <div class="row-header">
-            <img id="main-logo" src="./src/img/dark.png">
-            <br>
-            <br>
-            <h1 style="font-size: 50px">NYC Trip</h1>
-    </div>
+    <div class="main">
+        <img class="login-logo" src="src/img/dark.png">
+        <hr class="line1">
 
-    <hr class="line1">
-    
-    <div class="row-main">
-        <div class="column-left half">
-            <h1>
-                Going:
-            </h1>
-            <h1 class="going">
-                48
-            </h1>
+        <form action="/login">
             <br>
-            <h1>
-                Interested:
-            </h1>
-            <h1 class="interested">
-                85
-            </h1>
-        </div>
-
-        <div class="column-right half">
-            <h1>
-                Evento number:
-            </h1>
-            <h1 class="evento-number">
-                92
-            </h1>
+            <h2>
+                Username
+            </h2>
             <br>
-            <h1>
-                Graph goes here:
-            </h1>
-            <iframe></iframe>
-        </div>
+            <input class="input-box" type="text" name="fname" placeholder="User">
+            <br>
+            <br>
+            <h2>
+                Password
+            </h2>
+            <br>
+           <input class="input-box" type="text" name="lname" placeholder="Password">
+            <br>
+            <br>
+            <input class="button-login" type="submit" value="Submit">
+        </form>
 
     </div>
-    
-    <hr class="line1">
-    
-    <div class="row-footer right">
-        <img id="refresh-button" src="./src/img/refresh.png">
-    </div>
-    
+
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="./graphs.js"></script>
     <script>
