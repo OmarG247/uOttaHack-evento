@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/icon-dark.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/icon-light.png">
 
     <title>Evento</title>
 
@@ -17,52 +17,28 @@
 
 <body>
 
-    <div class="row-header">
-            <img id="main-logo" src="./src//img/logo-dark.png">
+   <div class="row-header">
+            <img id="main-logo" src="./src/img/dark.png">
             <br>
             <br>
-            <h1 style="font-size: 50px">NYC Trip</h1>
-    </div>
-
-    <hr class="line1">
-    
-    <div class="row-main">
-        <div class="column-left half">
-            <h1>
-                Going:
-            </h1>
-            <h1 class="going">
-                48
-            </h1>
-            <br>
-            <h1>
-                Interested:
-            </h1>
-            <h1 class="interested">
-                85
-            </h1>
-        </div>
-
-        <div class="column-right half">
-            <h1>
-                Evento number:
-            </h1>
-            <h1 class="evento-number">
-                92
-            </h1>
-            <br>
-            <h1>
-                Graph goes here:
-            </h1>
-            <iframe></iframe>
-        </div>
-
+            <h1 style="font-size: 50px">Event information</h1>
     </div>
     
     <hr class="line1">
     
-    <div class="row-footer right">
-        <img id="refresh-button" src="./src/img/refresh.png">
+    <div class="main">
+        <form action="index.html" method="get">
+            <br>
+            <h2>
+                Event link
+            </h2>
+            <br>
+            <input class="input-box" type="text" name="fname" placeholder="...">
+            <br>
+            <br>
+            <input class="button-login" type="submit" value="Submit">
+        </form>
+
     </div>
     
     <script src="https://d3js.org/d3.v5.min.js"></script>
