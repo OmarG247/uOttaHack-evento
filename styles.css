@@ -32,7 +32,7 @@ h5 {
 .row-main {
     width: 100%;
     box-sizing: border-box;
-    height: 60%;
+    height: 55%;
 }
 
 .row-footer {
@@ -131,7 +131,7 @@ h5 {
 }
 
 .login-logo {
-    height: 20%;
+    height: 140%;
 }
 
 .button-login {
@@ -161,4 +161,9 @@ h5 {
     width: 100%;
     border-width: 0px;
     border-color: transparent;
+}
+
+#viz {
+    height: 100%;
+    width: 100%;
 }

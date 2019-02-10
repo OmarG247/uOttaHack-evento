@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +19,6 @@
 
     <div class="row-header">
         <img id="main-logo" src="./src/img/dark.png">
-        <br>
         <br>
         <h1 style="font-size: 50px">NYC Trip</h1>
     </div>
@@ -49,9 +48,17 @@
         </div>
 
         <div class="column-right half">
+            
             <a href="http://35.231.181.17:7474/browser/">
                 <img class="main-graph" src="./src/img/main-graph.svg">
             </a>
+
+
+<!--
+            <div onload="draw()">
+                <div id="viz"></div>
+            </div>
+-->
 
         </div>
 
@@ -65,9 +72,32 @@
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="./graphs.js"></script>
+    <script src="/node_modules/vis/dist/vis.js"></script>
+    <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+    <script type="text/javascript">
+        var viz;
+
+        function draw() {
+            var config = {
+                container_id: "viz",
+                server_url: "bolt://35.231.181.17:7474",
+                server_user: "neo4j",
+                server_password: "zmc2QNTr2XMw",
+                initial_cypher: "START n=node(*) RETURN n;"
+            };
+
+            viz = new NeoVis.default(config);
+            console.log("we here");
+            console.log(JSON.stringify(viz));
+            viz.render();
+        }
+
+    </script>
+
     <script>
         // You can also require other files to run in this process
         require('./renderer.js')
+
     </script>
 </body>
 
