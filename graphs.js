@@ -1,4 +1,19 @@
-var circleRadii = [10, 30, 40, 55];
+var circleRadii = [10, 30, 40, 55, 70, 20, 30];
+
+let fbData = {
+    p1 : {
+        status: 'going', 
+        friends: ["p2"],
+    }, 
+    p2 : {
+        status : 'interested',
+        friends: ["p1", "p3"],
+    },
+    p3 : {
+        status : 'going',
+        friends: ["p2", "p1"]
+    }
+}
 
 d3.select('[id="graph"]').selectAll(".circles-handling")
     .data(circleRadii)

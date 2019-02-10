@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "font1";
+    src:url("./src/ufonts.com_klavika-bold-opentype.otf");
+}
+
+body, html {
+    font-family: "font1";
+    background-color:  	#3b5998;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: white;
+    font-family: inherit;
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    height: 300px;
+}
+
+.row-main {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50%;
+}
+
+.row-footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    height: 15%;
+}
+
+.row-header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    height: 25%;
+}
+
+.column {
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.column-left {
+    height: 100%;
+    width: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.column-right {
+    height: 100%;
+    width: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.left {
+    text-align: left;
+    align-content: left;
+    align-items: left;
+}
+
+.right {
+    text-align: right;
+    align-content: right;
+    align-items: right;
+}
+
+.half {
+    width: 50%;
+}
+
+.main {
+    width: 100%;
+}
+
+#main-logo {
+    height: 120px;
+    float: right;
+}
+
+.line1 {
+    width: 95%;
+    color: #dfe3ee;
+    height: 4px;
+    background-color: #dfe3ee;
+    border-width: 0px;
+}
+
+.evento-number {
+    font-size: 70px;
+    color: #71C5E8
+}
+
+.going {
+    font-size: 50px;
+    color: #00B140;
+}
+
+.interested {
+    font-size: 50px;
+    color: #FF671F;
+}
+
+#refresh-button {
+    height: 100%;
+}
